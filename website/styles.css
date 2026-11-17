@@ -218,3 +218,7 @@ details p { margin: 0.8rem 0 0; color: var(--muted); }
   .span-2 { grid-column: auto; }
   .form-actions .btn { width: 100%; }
 }
+
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.btn[disabled] { opacity: 0.6; cursor: wait; transform: none; }
+.order-done .form-actions { margin-top: 1.2rem; }

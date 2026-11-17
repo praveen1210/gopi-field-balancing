@@ -1,0 +1,14 @@
+node_modules/
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+*.log
+.env
+.env.local
+android/
+ios/
+supabase/.temp/
+supabase/.branches/
+*-firebase-adminsdk-*.json
+google-services.json

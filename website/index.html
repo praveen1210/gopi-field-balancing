@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gopi Field Balancing | On-Site Dynamic Balancing</title>
+  <title>GTG Vibral | Field Balancing &amp; Vibration Services</title>
   <meta name="description" content="On-site dynamic field balancing for fans, blowers, motors, pumps, rotors and more. Vibration analysis, balancing reports, and fast service. Book online." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -21,7 +22,7 @@
           <path d="M20 3v8M20 29v8M3 20h8M29 20h8" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
           <circle cx="31" cy="11" r="3" fill="var(--accent)"/>
         </svg>
-        <span data-biz="name">Gopi Field Balancing</span>
+        <span data-biz="name">GTG Vibral</span>
       </a>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -333,19 +334,25 @@
             </div>
           </fieldset>
 
+          <!-- Left empty by people; bots fill it in. -->
+          <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off" /></label>
+
           <p class="form-error" role="alert" hidden></p>
           <div class="form-actions">
-            <button type="submit" class="btn" data-channel="whatsapp">Send order on WhatsApp</button>
-            <button type="submit" class="btn btn-ghost-dark" data-channel="email">Send by Email</button>
+            <button type="submit" class="btn" data-channel="online">Submit Request</button>
+            <button type="submit" class="btn btn-ghost-dark" data-channel="whatsapp">Send on WhatsApp instead</button>
           </div>
           <p class="fine center">Your details are only used to contact you about this job.</p>
         </form>
 
         <div id="orderDone" class="order-done" hidden>
-          <h3>Order ready ✅</h3>
+          <h3 id="doneTitle">Request received ✅</h3>
           <p>Your reference: <strong id="orderRef"></strong></p>
-          <p>Your WhatsApp / email app has opened with the details. Please press <strong>Send</strong> there to complete the booking. We'll call you back to confirm.</p>
-          <button class="btn btn-ghost-dark" id="newOrder">Book another machine</button>
+          <p id="doneText">We'll call you to confirm the visit date. Keep this reference for any follow-up.</p>
+          <div class="form-actions">
+            <a class="btn" id="doneWhatsapp" target="_blank" rel="noopener">Share on WhatsApp</a>
+            <button class="btn btn-ghost-dark" id="newOrder">Book another machine</button>
+          </div>
         </div>
       </div>
     </section>
@@ -388,7 +395,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> <span data-biz="name">Gopi Field Balancing</span>. On-site dynamic balancing &amp; vibration analysis.</p>
+      <p>&copy; <span id="year"></span> <span data-biz="name">GTG Vibral</span>. On-site dynamic balancing &amp; vibration analysis.</p>
     </div>
   </footer>
 
