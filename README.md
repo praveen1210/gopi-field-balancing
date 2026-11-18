@@ -2,8 +2,9 @@
 
 On-site field balancing and vibration services for Gopi's business:
 
-- **Website** (`website/`): services, standards, FAQ and a booking form. Hosted
-  on Netlify from Gopi's account: run `npm run website:release`, then drag the
+- **Website** (`website/`): services, standards, FAQ and a booking form. Live at
+  https://gtg-vibral.netlify.app (Gopi's Netlify account). To update it, run
+  `npm run website:release`, then drag the
   `website-release` folder (or `gtg-vibral-website.zip`) onto
   https://app.netlify.com/drop. After a change, run it again and drag it onto
   the site's **Deploys** page.
