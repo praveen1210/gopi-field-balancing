@@ -64,19 +64,21 @@ Website form ──► New request ──► Scheduled ──► On site ──�
    `SUPABASE_ANON_KEY` so `.github/workflows/keepalive.yml` can ping the
    project twice a week.
 
-## Local development
+## Day-to-day development
 
-Needs Docker Desktop running.
+No Docker needed: put Gopi's project URL and key in `.env` and everything runs
+against the real (free) Supabase project.
 
 ```bash
 npm install
-npm run db:start      # local Supabase on ports 553xx, applies migrations
-npm run db:test       # database tests (pgTAP)
-npm run website       # website on http://localhost:8120, saving to the local DB
-npm run web           # the app in a browser (or `npm start` for Expo Go / phone)
+npm run website       # website on http://localhost:8120
+npm start             # the app on a phone with Expo Go (or `npm run web` in a browser)
 npm run check         # lint + typecheck + unit tests
 ```
 
-`.env` points at the local stack by default. To get the local test logins, load
-`supabase/seed.sql` into the local database; the logins are listed at the top of
-that file.
+### Optional: offline test database (Docker)
+
+Use this only to try database changes without touching real jobs. It needs
+Docker Desktop. `npm run db:start` starts a throwaway copy on ports 553xx and
+`npm run db:test` runs the database tests. The test logins are listed in
+`supabase/seed.sql`. Point `.env` at `http://127.0.0.1:55321` while using it.

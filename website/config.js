@@ -14,6 +14,6 @@ window.BUSINESS = {
 // Only the PUBLIC project URL and publishable (anon) key belong here.
 // Left empty, the form falls back to sending the order on WhatsApp.
 window.BACKEND = {
-  supabaseUrl: "",
-  anonKey: "",
+  supabaseUrl: "https://fryruxfbrrnlwnjecmja.supabase.co",
+  anonKey: "sb_publishable_KlvKpfM_a3CsrCBiXuPAHg_1kK3JaGs",
 };
