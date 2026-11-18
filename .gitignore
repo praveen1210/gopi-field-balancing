@@ -12,3 +12,5 @@ supabase/.temp/
 supabase/.branches/
 *-firebase-adminsdk-*.json
 google-services.json
+website-release/
+gtg-vibral-website.zip

@@ -16,7 +16,8 @@
     "db:stop": "supabase stop",
     "db:reset": "supabase db reset",
     "db:test": "supabase test db",
-    "build:apk": "npx eas-cli@latest build -p android --profile preview"
+    "build:apk": "npx eas-cli@latest build -p android --profile preview",
+    "website:release": "node scripts/build-website.mjs"
   },
   "jest": {
     "preset": "jest-expo",

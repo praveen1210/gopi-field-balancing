@@ -2,8 +2,11 @@
 
 On-site field balancing and vibration services for Gopi's business:
 
-- **Website** (`website/`): services, standards, FAQ and a booking form. Live at
-  https://praveen1210.github.io/gopi-field-balancing/
+- **Website** (`website/`): services, standards, FAQ and a booking form. Hosted
+  on Netlify from Gopi's account: run `npm run website:release`, then drag the
+  `website-release` folder (or `gtg-vibral-website.zip`) onto
+  https://app.netlify.com/drop. After a change, run it again and drag it onto
+  the site's **Deploys** page.
 - **Mobile app** (Expo, `app/` + `src/`): every website request arrives here.
   Schedule visits on a calendar, assign helpers, track each job and keep its
   history.
@@ -48,7 +51,7 @@ Website form ──► New request ──► Scheduled ──► On site ──�
    - These two values are public by design. Never put the service-role key or
      the database password in any file here.
 5. **Set the website's URL for sign-ups.** Under Authentication → URL
-   Configuration, set the Site URL to the website. Leave email confirmation on.
+   Configuration, set the Site URL to the Netlify website address. Leave email confirmation on.
 6. **Build the Android app:**
    - `npx eas-cli@latest init` links the project and adds the `projectId`
      that push notifications need.
